@@ -5,7 +5,7 @@ const cart = document.querySelector('.navcart');
 
 const desktopMenu = document.querySelector('.dekstop-menu');
 const mobileMenu = document.querySelector('.mobile-menu');
-const shoppingCart = document.querySelector('.product-detail');
+const shoppingCart = document.querySelector('.shopping-cart-detail');
 const cardsCont = document.querySelector('.cards-container');
 
 

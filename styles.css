@@ -146,6 +146,8 @@ nav{
     background: var(--white);
     top: 61px;
     padding: 24px;
+    left: 0;
+    width: calc(100% -24px);
 }
 .mobile-menu ul{
     padding: 0;
@@ -187,7 +189,7 @@ nav{
 
 
 /*Detalles del carrito*/
-.product-detail {
+.shopping-cart-detail {
     background: var(--white);
     width: 360px;
     padding: 0 24px;
@@ -309,6 +311,82 @@ nav{
 }
 
 
+/*Detalles del producto*/
+.product-detail {
+    width: 360px;
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+}
+
+.product-detail-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    background-color: var(--white);
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--very-light-pink);
+}
+
+.product-detail-close:hover{
+    cursor: pointer;
+}
+
+.product-detail > img:nth-child(2){
+    width: 100%;
+    height: 360px;
+    border-radius: 0 0 20px 20px;
+}
+
+.primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.product-detail-info{
+    margin:24px 24px 0 24px;
+    background: var(--white);
+}
+.product-detail-info p:nth-child(1){
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product-detail-info p:nth-child(2){
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+.product-detail-info p:nth-child(3){
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 640px){
     .menu{
         display: block;
@@ -323,9 +401,12 @@ nav{
     .dekstop-menu {
         display: none;
     }
-    .product-detail {
+    .shopping-cart-detail {
         width: 100%;
     }
+    .product-detail {
+        width: 100%;
+        }
 
     .cards-container{
         grid-template-columns: repeat(auto-fill, 140px);
