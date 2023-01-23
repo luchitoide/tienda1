@@ -314,7 +314,12 @@ nav{
 /*Detalles del producto*/
 .product-detail {
     width: 360px;
+    background: var(--white);
+    border: 1px solid var(--hospital-green);
+    border-top: 0;
     padding-bottom: 24px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     position: absolute;
     right: 0;
 }
@@ -358,7 +363,6 @@ nav{
 
 .product-detail-info{
     margin:24px 24px 0 24px;
-    background: var(--white);
 }
 .product-detail-info p:nth-child(1){
     font-weight: bold;
@@ -378,6 +382,10 @@ nav{
     font-size: var(--sm);
     margin-top: 0;
     margin-bottom: 36px;
+}
+
+.product-description{
+    display: none;
 }
 
 
